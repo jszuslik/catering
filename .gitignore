@@ -1,0 +1,6 @@
+# Wp-Theme Start Ignore these files
+/.idea
+/.DS_Store
+/node_modules
+npm-debug.log
+/images
