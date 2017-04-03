@@ -8,7 +8,7 @@
  */
 
 ?>
-    <div class="foot container widget-bar accent-color">
+    <div class="foot container widget-bar" style="background-color: #a31d21;">
       <div class="row">
         <div class="col-md-6">
           <div class="panel panel-default">

@@ -44,21 +44,17 @@
 
  		// Load Stylesheets
 		wp_enqueue_style('jms_google_fonts', "http://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto+Condensed:400,300,300italic,400italic,700,700italic");
-    // wp_enqueue_style( 'joshuaszuslik-reset', get_template_directory_uri(). '/css/reset.css' );
  		wp_enqueue_style( 'joshuaszuslik-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
  		wp_enqueue_style( 'joshuaszuslik-roboto', get_template_directory_uri() . '/css/roboto.min.css' );
  		wp_enqueue_style( 'joshuaszuslik-material' , get_template_directory_uri() . '/css/material.min.css' );
  		wp_enqueue_style( 'joshuaszuslik-ripples' , get_template_directory_uri() . '/css/ripples.min.css' );
-    wp_enqueue_style( 'joshuaszuslik-font-awesome' , get_template_directory_uri() . '/css/font-awesome.min.css' );
-    wp_enqueue_style( 'joshuaszuslik-animate' , get_template_directory_uri() . '/css/animate.css' );
-    wp_enqueue_style( 'joshuaszuslik-palette' , get_template_directory_uri() . '/css/palette.css' );
-        wp_enqueue_style( 'joshuaszuslik-sass' , get_template_directory_uri() . '/assets/css/style.css' );
+    	wp_enqueue_style( 'joshuaszuslik-font-awesome' , get_template_directory_uri() . '/css/font-awesome.min.css' );
+    	wp_enqueue_style( 'joshuaszuslik-animate' , get_template_directory_uri() . '/css/animate.css' );
+        wp_enqueue_style( 'joshuaszuslik-sass' , get_template_directory_uri() . '/assets/css/style.min.css' );
  		wp_enqueue_style( 'joshuaszuslik-style', get_stylesheet_uri() );
 
     	wp_enqueue_script( 'joshuaszuslik-prefixfree', get_template_directory_uri(). '/_/js/prefixfree.min.js', array('jquery') );
- 		// wp_enqueue_script( 'joshuaszuslik-modernizr', get_template_directory_uri() . '/_/js/modernizr-2.8.0.dev.js' );
  		wp_enqueue_script( 'joshuaszuslik-bootstrap-js', get_template_directory_uri() . '/js/vendor/bootstrap.min.js' );
- 		// wp_enqueue_script( 'joshuaszuslik-response-js', get_template_directory_uri(). '/js/vendor/html5-3.6-respond-1.4.2.min.js');
  		wp_enqueue_script( 'joshuaszuslik-response-js', get_template_directory_uri(). '/js/vendor/ripples.min.js');
  		wp_enqueue_script( 'joshuaszuslik-response-js', get_template_directory_uri(). '/js/vendor/material.min.js');
 

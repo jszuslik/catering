@@ -162,7 +162,7 @@
 			</div>
 		</div>
 		<div class="navi container">
-			<nav class="navbar accent-color" role="navigation">
+			<nav class="navbar" role="navigation"  style="background-color: #a31d21;">
 				<hr class="nav-rule">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
