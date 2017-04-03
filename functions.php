@@ -24,6 +24,8 @@
 	add_theme_support( 'structured-post-formats', array( 'link', 'video' ) );
 	add_theme_support( 'post-formats', array( 'aside', 'audio', 'chat', 'gallery', 'image', 'quote', 'status' ) );
 	add_theme_support( 'post-thumbnails' );
+	add_image_size('logo-size', 293, 127, false);
+
   function wpcodex_add_excerpt_support_for_pages() {
 	   add_post_type_support( 'page', 'excerpt' );
   }
@@ -197,9 +199,9 @@ add_action( 'after_setup_theme', 'joshuaszuslik_setup' );
   require get_template_directory() . '/_/inc/customizer.php';
   $header = array(
 	'flex-width'    => true,
-	'width'         => 960,
+	'width'         => 293,
 	'flex-height'    => true,
-	'height'        => 200,
+	'height'        => 127,
 	'default-image' => '',
 	'uploads' => true
 );
@@ -216,7 +218,8 @@ function remove_admin_bar()
 {
     return false;
 }
-add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
+//add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
+
 
 
 
