@@ -12,7 +12,7 @@ var gulp 		= require('gulp'),
     rename 		= require('gulp-rename'),
     uglify 		= require('gulp-uglify'),
     pump 		= require('pump');
-var devDomain = 'hawgcity.dev';
+var devDomain = 'hc.dev';
 var browserSync = require('browser-sync').create();
 
 
