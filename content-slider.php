@@ -19,24 +19,30 @@
                       $loop = null;
                       $loop = new WP_Query($args);   //Create a new query, passing it the arguments you specified above
 
-
+                    $img_sets = array();
+                    $x = 0;
                     while ( $loop->have_posts() ) : $loop->the_post();
-                    $ID[] = get_the_ID();
-                    $title[] = get_the_title();
-                    $caption[] = get_field('caption');
-                    $image[] = get_field('image');
-                    $link_text[] = get_field('link-text');
-                    $url[] = get_field('link');
+                    $img_data = get_field('image');
+                    $img_sets[] = array(
+                            'ID' => get_the_ID(),
+                            'x' => $x,
+                            'title' => get_the_title(),
+                            'caption' => get_field('caption'),
+                            'text' => get_field('link-text'),
+                            'url' => get_field('link'),
+                            'img_src' => wp_get_attachment_image($img_data['id'], 'full', '', array('class' => 'fadeIn animated')
+                        )
+                    );
+                    $x++;
 
-                    endwhile;wp_reset_query();
-                    $arrlength = count($ID); ?>
+                    endwhile;wp_reset_query(); ?>
 
                         <div class="carousel-inner">
 
-                            <?php for ($x = 0; $x < $arrlength; $x++ ) {?>
+                            <?php foreach($img_sets as $img_set) { ?>
 
                             <div class="item">
-                              <img class="fadeIn animated" src="<?php echo $image[$x] ?>" alt="First image slide" />
+                                <?php echo $img_set['img_src']; ?>
                             </div>
 
                             <?php } ?>
@@ -57,10 +63,10 @@
                         <div class="container">
                             <div class="col-xs-12 col-md-12">
                                 <ol class="carousel-caption animated fadeIn">
-                                  <?php for ($x = 0; $x < $arrlength; $x++ ) {?>
+                                    <?php foreach($img_sets as $img_set) { ?>
 
-                                  <li data-slide-to="<?php echo $x ?>" class="animated fadeIn">
-                                    <a href="<?php echo $url[$x] ?>"><p class="caption-p"><?php echo $caption[$x] ?><span> <?php echo $link_text[$x] ?></span></p></a>
+                                  <li data-slide-to="<?php echo $img_set['x']; ?>" class="animated fadeIn">
+                                    <a href="<?php echo $img_set['url']; ?>"><p class="caption-p"><?php echo $img_set['caption']; ?><span> <?php echo $img_set['text']; ?></span></p></a>
                                   </li>
 
                                   <?php } ?>
