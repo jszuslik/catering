@@ -1,0 +1,13 @@
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .social-links ul li a {
+    font-size: 2.5em;
+    line-height: 1;
+  }
+  .navi.container {
+    width: 1220px;
+  }
+  .foot.container {
+    width: 1190px;
+  }
+}

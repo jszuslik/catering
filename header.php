@@ -171,17 +171,17 @@
 						<span class="icon-bar"></span>
 					</button>
 				</div>
-
+                <div class="phone-number">
+                    <?php
+                    $phone = of_get_option('options_phone');
+                    $char = array('(',')','-',' ');
+                    $phone_link = str_replace($char, '', $phone);
+                    ?>
+                    <a href="tel:+1<?php echo $phone_link; ?>"><i class="fa fa-phone"></i> <?php echo $phone; ?></a>
+                </div>
 						<?php jms_primary_menu(); ?>
-						<div class="phone-number">
-							<?php
-								$phone = of_get_option('options_phone');
-								$char = array('(',')','-',' ');
-								$phone_link = str_replace($char, '', $phone);
-							?>
-							<a href="tel:+1<?php echo $phone_link; ?>"><i class="fa fa-phone"></i> <?php echo $phone; ?></a>
-						</div>
-				</nav>
+
+            </nav>
 				<div class="col-md-12 nav-wrapper">
 					<div id="mainnav-bg-wrap">
 						<div id="mainnav-bg">

@@ -41,6 +41,7 @@
  	function joshuaszuslik_scripts_styles() {
 
  		// Load Stylesheets
+		wp_enqueue_style('jms_google_fonts', "http://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto+Condensed:400,300,300italic,400italic,700,700italic");
     wp_enqueue_style( 'joshuaszuslik-reset', get_template_directory_uri(). '/css/reset.css' );
  		wp_enqueue_style( 'joshuaszuslik-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
  		wp_enqueue_style( 'joshuaszuslik-roboto', get_template_directory_uri() . '/css/roboto.min.css' );

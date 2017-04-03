@@ -1,0 +1,96 @@
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .top.container {
+    position: relative;
+    top: 50px;
+  }
+  .logo {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .social-links {
+    margin-bottom: 30px;
+  }
+  .navi.container {
+    position: relative;
+    top: 30px;
+  }
+  .navi.container .col-md-3 {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+  .phone-number {
+    float: right;
+    margin-top: 8px;
+  }
+  .carousel-inner .item img {
+    max-width: 1170px;
+    width: 100%;
+    max-height: 400px;
+    height: auto;
+  }
+  .carousel-caption li.active {
+    min-width: 25%;
+  }
+  .caption-position-1 {
+    bottom: 100px;
+    left: -35px;
+  }
+  .caption-position-2 {
+    bottom: 350px;
+    left: -35px;
+  }
+  .caption-position-3 {
+    bottom: 100px;
+    right: -15px;
+  }
+  .caption-position-4 {
+    bottom: 350px;
+    right: -15px;
+  }
+  .content {
+    background-color: #C23A3D;
+    margin-left: -15px;
+  }
+  .wrapper {
+    background-color: #ffffff;
+    margin: 30px 15px;
+    padding: 0 30px;
+  }
+  .container .well {
+    background-color: #eaeaea;
+  }
+  .well-lg {
+    min-height: 160px;
+    margin: 30px 15px;
+  }
+  .well .col-md-4 .btn {
+    left: 30%;
+    width: 60%;
+    padding: 1.8em;
+  }
+  .top.container .panel {
+    margin-top: 15px;
+    background-color: #ffffff;
+  }
+  .panel {
+    background-color: #eaeaea;
+  }
+  #page-container .panel.page, #content-container .panel.page, #content-container .panel.single {
+    margin-bottom: 0;
+    box-shadow: 0px 0px 0px 0px transparent;
+  }
+  .page-template-default .panel-heading.thmbnail {
+    padding: 0;
+    max-height: 200px;
+  }
+  .page-template-default .panel-heading.thmbnail h1 {
+    position: relative;
+    bottom: 130px;
+    padding-left: 30px;
+  }
+  .page-template-default .content.container .wrapper {
+    padding-top: 20px;
+  }
+
+}
