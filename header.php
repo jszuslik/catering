@@ -80,7 +80,7 @@
 						<div class="col-md-4">
 							<div class="logo">
 								<a href="/">
-									<img src="/wp-content/themes/hawgcity1/images/hawg-city-catering-logo.png" />
+									<img src="http://hawgcitycatering.com/wp-content/uploads/2017/04/hawg-city-catering-logo.png" />
 								</a>
 							</div>
 						</div>
